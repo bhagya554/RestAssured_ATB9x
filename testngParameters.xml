@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="Chrome Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="http://google.com"></parameter>
+        <classes>
+            <class name="org.example.ex03_TestNGExamples.TestNGParameters">
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Firefox Test">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="url" value="http://facebook.com"></parameter>
+        <classes>
+            <class name="org.example.ex03_TestNGExamples.TestNGParameters">
+
+            </class>
+        </classes>
+    </test>
+</suite>
